@@ -43,8 +43,8 @@ public class MeshGenerator : MonoBehaviour
             zero, right, up, zero, left, down,
             zero, down, right, zero, up, left,
         };
-        var crosshaitVerticesColorLayout = new Color[6 * 2]
-{
+        var crosshairVerticesColorLayout = new Color[6 * 2]
+        {
             colors[0], Color.clear, Color.clear, colors[1], Color.clear, Color.clear,
             colors[2], Color.clear, Color.clear, colors[3], Color.clear, Color.clear,
         };
@@ -72,7 +72,7 @@ public class MeshGenerator : MonoBehaviour
             meshFaces.Add(facesIndicesOffset + crosshairFacesLayout[i * 3 + 1]);
             meshFaces.Add(facesIndicesOffset + crosshairFacesLayout[i * 3 + 2]);
         }
-        meshColors.AddRange(crosshaitVerticesColorLayout);
+        meshColors.AddRange(crosshairVerticesColorLayout);
 
         // generate cells
         var cellsVerticesLayout = new int[16]
